@@ -1,0 +1,33 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|If Window Active|Chiaki  Stream|1|0|If_Statement|||||1|
+2|[LoopStart]|LoopStart|0|0|Loop|||||3|
+3|[CommentBlock]|in menu|0|1|CommentBlock|||||5|
+4|Continue, Continue, FoundX, FoundY, 0|864, 53, 1273, 158, *128 .\Screen_20240430120400.png|1|0|ImageSearch||Window|||8|
+5|If Image/Pixel Found||1|0|If_Statement|||||10|
+6|k|{k Down}|1|100|Send|||||12|
+7|k|{k Up}|1|100|Send|||||14|
+8|[CommentBlock]|circle|0|1|CommentBlock|||||16|
+9|[End If]|EndIf|1|0|If_Statement|||||19|
+10|[CommentBlock]|respawn|0|1|CommentBlock|||||20|
+11|Continue, Continue, FoundX, FoundY, 0|21, 161, 252, 261, *255 .\Screen_20240430122114.png|1|0|ImageSearch||Window|||23|
+12|If Image/Pixel Found||1|0|If_Statement|||||25|
+13|k|{k Down}|1|100|Send|||||27|
+14|k|{k Up}|1|100|Send|||||29|
+15|[End If]|EndIf|1|0|If_Statement|||||31|
+16|[CommentBlock]|in game|0|1|CommentBlock|||||32|
+17|Continue, Continue, FoundX, FoundY, 0|28, 50, 301, 228, .\Screen_20240430122337.png|1|0|ImageSearch||Window|||35|
+18|4|{4 Down}|1|0|Send|||throttle||37|
+19|If Image/Pixel Found||1|0|If_Statement|||||38|
+20|[End If]|EndIf|1|0|If_Statement|||||40|
+21|[CommentBlock]|reset|0|1|CommentBlock|||||41|
+22|Continue, Continue, FoundX, FoundY, 0|929, 321, 1150, 361, *128 .\Screen_20240430122611.png|1|0|ImageSearch||Window|||44|
+23|If Image/Pixel Found||1|0|If_Statement|||||46|
+24|i|{i Down}|1|100|Send|||||48|
+25|i|{i Up}|1|100|Send|||||50|
+26|[End If]|EndIf|1|0|If_Statement|||||52|
+27|[LoopEnd]|LoopEnd|1|0|Loop|||||53|
+28|[End If]|EndIf|1|0|If_Statement|||||54|
+
